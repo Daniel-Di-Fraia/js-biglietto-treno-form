@@ -83,38 +83,3 @@ function ticketPrice(eta,km){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//MILESTONE 1
-//creiamo una funzione per stabilire il prezzo del biglietto
-// function ticketPrice(eta,km){
-//     eta = parseInt(prompt("inserisci la tua età"));
-//     km = parseInt(prompt("inserisci quanti Km devi fare"));    
-//     console.log("età utente:", eta , "anni");
-//     console.log("Km da percorrere:", km , "Km");
-//     let tripPrice = 0.21 * km;
-//     if (eta < 18) {
-//         tripPrice = tripPrice - ((tripPrice * 20 / 100));
-//         console.log("sconto applicato: bambini, 20%");
-//     } else if (eta > 65) { 
-//          tripPrice = tripPrice - ((tripPrice * 40 / 100));
-//         console.log("sconto applicato: Over65, 40%");
-//     }
-//      return `prezzo finale: ${tripPrice.toFixed(2)} €`;
-// }
-
-// //richiamiamo la funzione
-// console.log(ticketPrice())
