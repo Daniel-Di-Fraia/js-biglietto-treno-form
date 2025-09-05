@@ -22,6 +22,14 @@
 //richiamiamo il bottone
 const button = document.getElementById("bottone");
 
+//richiamiamo il nome passeggero
+const userName = document.getElementById("nome");
+const nome = document.getElementById("outputNome");
+
+//dichiarazione elementi output
+const outEta = document.getElementById("outputEta");
+const outKm = document.getElementById("outputKm");
+
 //selezione l'elemento form
 const myForm = document.querySelector("form");
 
@@ -30,11 +38,19 @@ myForm.addEventListener("submit",
     (event) => {
         //blocco invio del form
         event.preventDefault();
-        //richiamiamo i 2 input 
+
+        //richiamiamo gli input 
         const etaUser = parseInt(document.getElementById("eta").value);
         const kmUser = parseInt(document.getElementById("km").value);
+
+        //stampiamo in pagina i dati del form
+        nome.innerText = `Nome e cognome: ${userName.value}`;
+        outEta.innerText = `età utente: ${etaUser}`;
+        outKm.innerText = `Km inseriti: ${kmUser}`;
+
         //stampiamo in pagina e in console il prezzo finale
         console.log(ticketPrice(etaUser,kmUser));
+        document.getElementById("result").innerText = ticketPrice(etaUser,kmUser);
     }
 );
 
@@ -43,10 +59,8 @@ function ticketPrice(eta,km){
     let tripPrice = 0.21 * km;
     if (eta < 18) {
         tripPrice = tripPrice - ((tripPrice * 20 / 100));
-        // console.log("sconto applicato: bambini, 20%");
     } else if (eta > 65) { 
          tripPrice = tripPrice - ((tripPrice * 40 / 100));
-        // console.log("sconto applicato: Over65, 40%");
     }
      return `prezzo finale: ${tripPrice.toFixed(2)} €`;
 }
