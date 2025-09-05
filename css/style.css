@@ -90,7 +90,7 @@ h3 {
     flex-direction: column;
     padding: 20px;
     height: 100px;
-    width: 255px;
+    width: 337px;
     border: 2px solid #e14e84;
     border-radius: 10px 10px;
 }
@@ -108,4 +108,8 @@ h3 {
 
 #treno {
     height:240px;
+}
+
+#treno:hover {
+    transform: scale(1.05);
 }
