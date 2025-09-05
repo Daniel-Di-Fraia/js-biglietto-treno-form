@@ -19,8 +19,9 @@
 
 
 //MILESTONE 1
-//richiamiamo il bottone
+//richiamiamo il bottone "calcola" e il bottone "annulla"
 const button = document.getElementById("bottone");
+const annulla = document.getElementById("delete");
 
 //richiamiamo il nome passeggero
 const userName = document.getElementById("nome");
@@ -51,6 +52,13 @@ myForm.addEventListener("submit",
         //stampiamo in pagina e in console il prezzo finale
         console.log(ticketPrice(etaUser,kmUser));
         document.getElementById("result").innerText = ticketPrice(etaUser,kmUser);
+
+        //pulizia campi
+        annulla.addEventListener("click",
+            () => {
+                document.querySelector("form").reset();
+            }
+        )
     }
 );
 
