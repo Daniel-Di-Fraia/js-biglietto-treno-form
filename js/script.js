@@ -44,6 +44,13 @@ myForm.addEventListener("submit",
         const etaUser = parseInt(document.getElementById("eta").value);
         const kmUser = parseInt(document.getElementById("km").value);
 
+        //pulizia campi
+        annulla.addEventListener("click",
+            () => {
+                myForm.reset();
+            }
+        );
+
         //stampiamo in pagina i dati del form
         nome.innerText = `Nome e cognome: ${userName.value}`;
         outEta.innerText = `età utente: ${etaUser}`;
@@ -53,12 +60,6 @@ myForm.addEventListener("submit",
         console.log(ticketPrice(etaUser,kmUser));
         document.getElementById("result").innerText = ticketPrice(etaUser,kmUser);
 
-        //pulizia campi
-        annulla.addEventListener("click",
-            () => {
-                document.querySelector("form").reset();
-            }
-        )
     }
 );
 
