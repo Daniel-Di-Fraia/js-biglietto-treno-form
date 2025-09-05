@@ -7,18 +7,42 @@
     <title>Form biglietto del treno</title>
 </head>
 <body>
-    
-     <form action="">
-        <input id="nome" type="text" placeholder="inserisci il tuo nome" required>
-        <input id="eta" type="number" placeholder="Inserisci la tua età" required>
-        <input id="km" type="number" placeholder="inserisci KM" required>
-        <button id="bottone">Calcola Prezzo</button>
-        <button id="delete">annulla</button>
-    </form>
-    <div id="outputNome"></div>
-    <div id="outputEta"></div>
-    <div id="outputKm"></div>
-    <div id="result"></div>
+    <header>
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+    </header>
+    <main>
+        <form class="form-container" action="">
+            <div class="column">
+                <label>Inserisci il tuo nome</label>
+                <input id="nome" type="text" placeholder="nome" required>
+            </div>
+            <div class="column">
+                <label>Inserisci la tua età</label>
+                <input id="eta" type="number" placeholder="età" required>
+            </div>
+            <div class="column">
+                <label>Inserisci i KM</label>
+                <input id="km" type="number" placeholder="KM" required>
+            </div>
+                <button id="bottone">Calcola Prezzo</button>
+                <button id="delete">annulla</button>
+        </form>
+    </main>
+    <h2>Il tuo biglietto</h2>
+    <footer>
+        <h3>Dettagli informazioni inserite</h3>
+        <div class="row">
+        <div class="column-det">
+        <div id="outputNome"></div>
+        <div id="outputEta"></div>
+        </div>
+        <img src="img/speedy-train-color-lines-png-design-5695204.png" alt="treno" id="treno">
+        <div class="column-det">
+        <div id="outputKm"></div>
+        <div id="result"></div>
+        </div>
+        </div>
+    </footer>
     
     
     

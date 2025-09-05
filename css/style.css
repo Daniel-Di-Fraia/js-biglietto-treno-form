@@ -10,3 +10,102 @@ body {
     font-size: 15px;
     background-color: #B81450;
 }
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    color: white;
+}
+
+main {
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px;
+    width: 60%;
+    margin: 0 auto;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+input {
+    height: 35px;
+    border: 2px solid #B81450;
+}
+
+#bottone , #delete{
+    width: 15%;
+    height: 35px;
+    margin-top: 27px;
+    background-color: #fca6a6;
+    flex-shrink: 0;
+    font-size: 15px;
+}
+
+.column {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 18px;
+    color: #B81450;
+    font-weight: 600;
+}
+
+footer {
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 10px;
+    width: 60%;
+    margin: 0 auto;
+    height: 225px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+h3 {
+    padding: 20px;
+}
+
+.column-det {
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100px;
+    width: 255px;
+    border: 2px solid #e14e84;
+    border-radius: 10px 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -58px;
+    align-items: center;
+}
+
+#outputNome , #outputEta , #outputKm , #result{
+    font-weight: 600;
+}
+
+#treno {
+    height:240px;
+}
